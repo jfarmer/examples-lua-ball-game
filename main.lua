@@ -7,7 +7,7 @@ function love.load()
   local pixels_per_meter, gravity = 64, 9.81
 
   love.physics.setMeter(pixels_per_meter)
-  world = love.physics.newWorld(0, pixels_per_meter*gravity, true)
+  world = love.physics.newWorld(pixels_per_meter*gravity/2, pixels_per_meter*gravity, true)
 
   objects = {}
 
